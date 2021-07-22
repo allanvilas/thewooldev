@@ -1,0 +1,9 @@
+body,h1,h2,label{
+    color:#999999;
+}
+
+.CreateAccount,form{
+    border-radius: 20px;
+    border-bottom-color: #999;
+    border-bottom-width: 6px;
+}
