@@ -13,23 +13,62 @@ $(document).change(function() {
                 minlength: 2
             },
             sobrenome: {
+                
                 required: true,
                 minlength: 2
             },
             telefone: {
+                required: true,
                 minlength: 14,
                 maxlength: 16
+            },
+            user: {
+                required: function(value)    {
+                            if(value.length>10){
+                                return true;
+                            else{
+                                return 0;
+                            }
+                        }
+                    },
+                minlength: 5,
+            },
+            pass1: {
+                required: true,
+                number: true,
+                minlength: 6,
+
+            },
+            pass2: {
+                required: true,
+                number: true,
+                minlength: 6,
+                equalTo: "#pass1",
+            },
+            email: {
+                required: true,
+                email: true,
             },
         },
         messages:{
             nome:"insira um nome válido",                 sobrenome:"insira um sobrenome válido",    
             telefone:"Insira um telefone válido (xx) x.xxxx-xxxx",
+            user:"",
         },
     });
 })
 
 $(":input")
     .keypress(function() {
+    
+        //validateUser
+        let user = document.getElementById('user');
+        let usertest = document.getElementById('user').value;
+        let confirm = (/\s/g.test(usertest));
+        if(!confirm){
+            $(user).last().addClass("is-invalid");
+        }
+        //validatePass
         
         updatePg();
         let tel = document.getElementById('telefone');
