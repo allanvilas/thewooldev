@@ -13,7 +13,6 @@ $(document).change(function() {
                 minlength: 2
             },
             sobrenome: {
-                
                 required: true,
                 minlength: 2
             },
@@ -23,21 +22,13 @@ $(document).change(function() {
                 maxlength: 16
             },
             user: {
-                required: function(value)    {
-                            if(value.length>10){
-                                return true;
-                            else{
-                                return 0;
-                            }
-                        }
-                    },
+                required: true,
                 minlength: 5,
             },
             pass1: {
                 required: true,
                 number: true,
                 minlength: 6,
-
             },
             pass2: {
                 required: true,
@@ -51,9 +42,13 @@ $(document).change(function() {
             },
         },
         messages:{
-            nome:"insira um nome válido",                 sobrenome:"insira um sobrenome válido",    
+            name:"insira um nome válido, somente caracteres",                 
+            sobrenome:"insira um sobrenome válido",    
             telefone:"Insira um telefone válido (xx) x.xxxx-xxxx",
-            user:"",
+            user:"Usuário incorreto, utilize a-Z, 0-9 sem espaços, mínimo 6 caracteres",
+            pass1:"Somente letras e números sem espaços, mínimo 6 digitos a-Z, 0-9",
+            pass2:"senha não compatível",
+            email:"Padrão de e-mail incorreto",
         },
     });
 })
