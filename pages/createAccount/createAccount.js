@@ -2,7 +2,9 @@ console.log("funcionando");
 
 var inputs = document.getElementsByClassName('cp').length;
 var progressBar = document.getElementById('progress');
+var form = $("#criarconta");
 
+//validação dos inputs
 $(document).change(function() {
   $("#criarConta").validate({
         errorClass: "is-invalid",
@@ -23,7 +25,7 @@ $(document).change(function() {
             },
             user: {
                 required: true,
-                minlength: 5,
+                minlength: 6,
             },
             pass1: {
                 required: true,
@@ -51,8 +53,11 @@ $(document).change(function() {
             email:"Padrão de e-mail incorreto",
         },
     });
-})
-
+});
+//botão de envio de informações e validação
+$("button").click(function(){
+    console.log(form.valid());
+});
 $(":input")
     .keypress(function() {
     
@@ -60,8 +65,10 @@ $(":input")
         let user = document.getElementById('user');
         let usertest = document.getElementById('user').value;
         let confirm = (/\s/g.test(usertest));
+        console.log(confirm);
         if(!confirm){
             $(user).last().addClass("is-invalid");
+            
         }
         //validatePass
         
