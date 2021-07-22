@@ -2,7 +2,7 @@ console.log("funcionando");
 
 var inputs = document.getElementsByClassName('cp').length;
 var progressBar = document.getElementById('progress');
-var form = $("#criarconta");
+const form = $("#criarConta");
 
 //validação dos inputs
 $(document).change(function() {
@@ -68,7 +68,6 @@ $(":input")
         console.log(confirm);
         if(!confirm){
             $(user).last().addClass("is-invalid");
-            
         }
         //validatePass
         
