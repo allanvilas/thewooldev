@@ -3,6 +3,11 @@ console.log("funcionando");
 var inputs = document.getElementsByClassName('cp').length;
 var progressBar = document.getElementById('progress');
 const form = $("#criarConta");
+const submitButton = $("#sub");
+
+$(document).ready(function(){
+    updatePg(); 
+});
 
 //validação dos inputs
 $(document).change(function() {
@@ -86,10 +91,23 @@ $(":input")
     })
     .focusout(function() {
         updatePg();
-    });
+    })
+    ;
 
 function updatePg(){
     let min = document.getElementsByClassName('is-valid').length;
     let setValue = (100/inputs)*min;
+    if(setValue >= 99){
+        $("#sub").last().removeClass("disable");
+        print("remove disabled" + " " + setValue);
+    }
+    else{
+        $("#sub").last().addClass("disabled");
+        print("add disabled" + " " + setValue);
+    }
     document.getElementById('progress').style.width = (setValue+"%");  
+}
+
+function print(arg){
+    console.log(arg);
 }
