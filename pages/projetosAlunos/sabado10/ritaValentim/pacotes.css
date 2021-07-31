@@ -1,0 +1,258 @@
+/* fontes: euphemia, cooper black, candara;
+cores: #faf3e0, #1e212d, #b68973,#eabf9f */
+
+body {
+	background-color: #faf3e0; 
+	background-image: url(img_1_projeto.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	backface-visibility: hidden;
+	font: 105% cooper black, hevetica, sans-serif;
+	font-weight: bold;
+	color: #faf3e0;
+	text-decoration: none;
+	text-align: right;
+	width: 98.75%;
+	padding-top: 10px;
+	padding-bottom: 0.15px;
+	padding-right: 0.75px;
+	margin: 0 auto;
+	margin: 1px 1px 5px 1px;	
+}
+
+ul{
+	list-style: none
+}
+
+.menu{
+	background-color: #1E212D;
+	font-size: 85%;
+	font-style: normal;
+	word-spacing: 80px;
+	color: #faf3e0;
+	float: center;
+	position: static;
+	display: block;
+	width: 97%;
+	margin-left: 1.75%;
+	margin top: 0%;
+	margin-right: 0%;
+	margin-bottom: 1.25%; 
+	top: 0px;
+	bottom:-50%;
+	border-radius:  5.5px 5.5px 12.25px 12.25px;
+	border-style: solid;
+	border-color: #1e212d;
+	box-shadow: 2.25px 0.5px 50.25px #000;	
+}
+
+.menu > ul{
+	background-color: #1e212d;
+	font-family: 30% candara, hevetica, sans-serif;
+	font-weight: bolder;
+	color: #faf3e0;
+	text-align: center;
+	margin-top: -7.75px;
+}
+
+.menu > ul > li{
+	font-size: 170%;
+	display: inline-block;
+	padding: 0.5%;
+}
+
+.Home :hover{
+	font-family: cooper black;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Pacotes :hover{
+	font-family: cooper black;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Continentes :hover{
+	font-family: cooper black;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+
+}
+
+.Sobre :hover{
+	font-family: cooper black;
+	font-weight: bolder;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Contato :hover{
+	font-family: cooper black;
+	font-weight: bolder;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+a{
+	background-color:#1e212d;
+	color: #faf3e0;
+	text-align: center;
+	text-decoration: none;
+	float: bottom right;
+	width: 10px;
+	height: 5px;
+	padding: 3px;
+	margin: 0px;
+	list-style-type: inherit;
+	border-radius:  5.5px 5.5px 5.25px 5.25px;
+	border-style: thin;
+	border-color: #000;
+}
+
+header{
+	background-color: #1E212D;
+	font-size: 145%;
+	text-align: center;
+	width: 94.25%;
+	padding-left: 39.75px;
+	margin-left: 1.5%;
+	text-shadow: 3px 3.45px 2px #b68973;
+}
+
+p{
+	font-size: 205%;
+	font-family: cooper black, hevetica, sans-serif;
+	text-align: center;
+	padding-left: 54.75px;
+}
+
+.pt1{
+	display: inline-block;
+}
+
+.pt2{
+	display: inline-block;
+}
+.pt3{
+	display: inline-block;
+}
+
+.galeria{
+	margin: 2px;
+	display: inline;
+	text-align: left;
+}
+
+img {
+	background-color: #eee;
+	justify-content: center;
+	display:inline-block;
+	float: left;
+	clear: both;
+	grid-row: 2 / span 1;
+	border: 1px solid #fff;
+	width: 20.5%;
+	padding: 10px 10px 45px 10px;
+	padding-left: 14.75px;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	margin-left: 54.75px;
+	margin-right: 160px;
+	-moz-box-shadow: 0px 2px 15px #333;
+	-webkit-box-shadow: 0px 2px 15px #333;
+	-o-box-shadow: 0px 2px 15px #333;
+	text-align: center;
+}
+
+h1{
+	font-size: 120%;
+	color: #1E212D;
+	text-align: center;
+	margin-right: 285px;
+	margin-top: 20px;
+	text-shadow: 3px 3.45px 2px #b68973;
+}
+
+.p1{
+	font-size: 105%;
+	color: #b68973;
+	text-align: justify; 
+	float: center;
+	margin-top: 1px; 
+	margin-right: 200px;
+	text-shadow: 3px 3.45px 2px #14274e;
+	word-spacing: 7.75px;
+	line-height: 45.5px;
+}
+
+h2{
+	font-size: 120%;
+	color: #1E212D;
+	text-align: center;
+	margin-right: 237.5px;
+	margin-top: 10px;
+	text-shadow: 3px 3.45px 2px #b68973;
+	}
+
+.p2{
+	font-size: 99.75%;
+	color: #b68973;
+	text-align: justify;
+	float: center;
+	margin-top: 1px;   
+	margin-right: 200px;
+	text-shadow: 3px 3.45px 2px #14274e;
+	word-spacing: 7.75px;
+	line-height: 45.5px;
+}
+
+h3{
+	font-size: 120%;
+	color: #1E212D;
+	text-align: center;
+	margin-right: 185.5px;
+	margin-top: 10px;
+	text-shadow: 3px 3.45px 2px #b68973;
+}
+
+.p3{
+	font-size: 105%;
+	color: #b68973;
+	text-align: justify;
+	float: center;
+	margin-top: 10px;   
+	margin-bottom: 180px;
+	margin-right: 150px;
+	text-shadow: 3px 3.45px 2px #14274e;
+	word-spacing: 7.75px;
+	line-height: 45.5px;
+}
+
+article{
+	background-color: #faf3e0;
+	font: 105% euphemia, hevetica, sans-serif;
+	font-size: 75%;
+	font-size: bold;
+	color: #b68973;
+	text-align: center;
+	text-decoration: none;
+	float: center;
+	position: absolute;
+	width: 1305px;
+	height: 70px;
+	padding: 0.15%;
+	padding-top: 3.5%;
+	margin-left: 1.5%;
+	top: 275%;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	border-radius: 5.5px 5.5px 12.25px 12.25px;
+	border-radius: #FFE4E1;
+}

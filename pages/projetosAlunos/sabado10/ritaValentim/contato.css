@@ -1,0 +1,179 @@
+/* fontes: euphemia, cooper black, candara;
+cores: #faf3e0, #1e212d, #b68973,#eabf9f */
+
+body{
+	background-color: #b68973; 
+	background-position: center;
+	font: 110% cooper black, hevetica, sans-serif;
+	font-weight: bold;
+	color: #1e212d;
+	text-decoration: none;
+	text-align: center;
+	width: 95%;
+	margin: 3 auto;
+}
+
+.menu{
+	background-color: #1E212D;
+	font-size: 85%;
+	font-style: normal;
+	color: #faf3e0;
+	width: 100%;
+	margin-right: 0%;
+	margin-bottom: 1.25%;
+	margin-left: 1.75%;
+	margin top: 0%; 
+	top: 0px;
+	bottom: -50%;
+	float: left;
+	position: static;
+	border-radius:  5.5px 5.5px 12.25px 12.25px;
+	border-style: solid;
+	border-color: #1e212d;
+	box-shadow: 2.25px 0.5px 50.25px #000;
+	display: block;
+	word-spacing: 80px;
+}
+
+.menu > ul{
+	background-color: #1e212d;
+	font-family: 30% candara, hevetica, sans-serif;
+	font-weight: bolder;
+	color: #faf3e0;
+	text-align: center;
+	margin-top: -7.75px;
+}
+
+.menu > ul > li{
+	font-size: 170%;
+	display: inline-block;
+	padding: 0.5%;
+}
+
+.Home :hover{
+	font-family: cooper black;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Pacotes :hover{
+	font-family: cooper black;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Continentes :hover{
+	font-family: cooper black;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Sobre :hover{
+	font-family: cooper black;
+	font-weight: bolder;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Contato :hover{
+	font-family: cooper black;
+	font-weight: bolder;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+ul li{
+	font-size: 89.75%;
+	list-style-type: none;
+}
+
+li{
+	color: #000;
+	text-align: left;
+	float: center;
+}
+
+a{
+	color: #faf3e0;
+	text-decoration: none;
+}
+
+section{
+	background-image: url(img_1_projeto.jpg);
+	background-position: center;
+	float: left;
+	clear: both;
+	text-align: center;
+	width: 84.75%;
+	height: 84.75%;
+	padding: 5px 15px 5px 10px;
+	padding-left: 44.75px;
+	margin-top: 3.5px;
+	margin-bottom: 50px;
+	margin-left: 95px;
+	margin-right: 95px;
+	border: 1px solid #fff;
+	-moz-box-shadow: 0px 2px 15px #333;
+	-webkit-box-shadow: 0px 2px 15px #333;
+	-o-box-shadow: 0px 2px 15px #333;
+	border-radius:  5.5px 5.5px 12.25px 12.25px;
+	border-style: solid;
+	border-color:  #FFE4E1;
+	box-shadow: 2.25px 0.5px 50.25px #000;
+	grid-row: 2 / span 1;
+	justify-content: center;
+	display:table-column;
+}
+
+h1{
+	background-color: #1E212D;
+    color: #faf3e0;
+    text-shadow: 3px 3.45px 2px #b68973;
+}
+
+input, textarea {
+	background-color: #b68973;
+	font-style: bolder;
+	color: #000;
+	text-align: center;
+    width: 120px;
+    height: 35px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    resize: none;
+} 
+
+article{
+	background-color: #eabf9f;
+	font: 75% euphemia, hevetica, sans-serif, bold;
+	text-align: center;
+	float: center;
+	position: fixed;
+	width: 98%;
+	height: 15.75%;
+	padding: 3px;
+	margin-left: 0.25%;
+	margin-bottom: -10px;
+	top: 545px;
+	border-radius: 5.5px 5.5px 12.25px 12.25px;
+    border-spacing: 1.25px;
+}
+
+footer{
+	font-size: 110%;
+	width: 97.5%;
+    height: 75px;
+    margin-bottom: -100px;
+    border-radius: 5.5px 5.5px 12.25px 12.25px;
+    border-spacing: 1.25px;
+}
+

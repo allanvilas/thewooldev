@@ -1,0 +1,155 @@
+/* fontes: euphemia, cooper black, candara;
+cores: #faf3e0, #1e212d, #b68973,#eabf9f */
+
+body {
+	background-color: #b68973; 
+	background-position: roll;
+	font: 85% cooper black, sans-serif;
+	font-weight: bold;
+	color: #faf3e0;
+	text-decoration: none;
+	float: center;
+	width: 95%;
+	padding-top: 10px;
+	padding-bottom: 7.75px;
+	margin: 3 auto;
+	left: 5px;
+}
+
+.menu{
+	background-color: #1E212D;
+	font-size: 85%;
+	font-style: normal;
+	color: #faf3e0;
+	float: center;
+	width: 100%;
+	margin-right: 0%;
+	margin-bottom: 1.25%;
+	margin-left: 1.75%;
+	margin top: 0%;
+	top: -5px;
+	bottom: -50%;
+	border-radius:  5.5px 5.5px 12.25px 12.25px;
+	border-style: solid;
+	border-color: #1e212d;
+	box-shadow: 2.25px 0.5px 50.25px #000;
+	word-spacing: 80px; 
+	position: static;
+	display: block;
+}
+
+.menu > ul{
+	background-color: #1e212d;
+	font-family: 30% candara, hevetica, sans-serif;
+	font-weight: bolder;
+	color: #faf3e0;
+	text-align: center;
+	margin-top: -7.75px;
+
+}
+
+.menu > ul > li{
+	font-size: 170%;
+	display: inline-block;
+	padding: 0.5%;
+}
+
+
+.Home :hover{
+	font-family: cooper black;
+	font-size: 80%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Pacotes :hover{
+	font-family: cooper black;
+	font-size: 80%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Continentes :hover{
+	font-family: cooper black;
+	font-size: 80%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Sobre :hover{
+	font-family: cooper black;
+	font-weight: bolder;
+	font-size: 100%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+.Contato :hover{
+	font-family: cooper black;
+	font-weight: bolder;
+	font-size: 80%;
+	color: #b68973;
+	transition: 5.75s;
+}
+
+ul{
+	list-style: none
+}
+
+a{
+	font-family: 30% cooper black, sans-serif, bold;
+	color: #faf3e0;
+	text-decoration: none;	
+}
+
+article {
+	background-color: #1E212D;
+	font: 85% euphemia, hevetica, sans-serif;
+	font-weight: bold;
+	color: #eabf9f;
+	float: center;
+	text-align: center;
+	width: 103.75%;
+	margin-top: 0.5%;
+	position: relative;
+	border-radius: 5.5px 5.5px 12.25px 12.25px;
+    border-spacing: 1.25px;
+}
+
+.galeria{
+		max-width: 95%;
+		display: inline-block;
+		text-align: left;
+}
+
+.img-1 > img{
+		max-width: 24%;
+		margin: 0.05%;
+}
+
+.img1{
+	width: 24%;
+	display:inline-block;
+	margin: 0.05%;
+}
+
+.FOOTER{
+	background-color: #faf3e0;
+	font: 125% euphemia, hevetica, sans-serif, bold;
+	color: #b68973;
+	text-decoration: none;
+    float: center;
+    text-align: center;
+    text-align: top;
+    width: 102.5%;
+    height: 90px;
+    padding: 0.5%;
+	margin-left: 0.75%;
+    bottom: -100px;
+    top: 5px;
+    right: 0px;
+    left: 0px;
+	text-shadow: 0px 0px 0px #14274e;
+	border-radius: 5.5px 5.5px 12.25px 12.25px;
+    border-spacing: 1.25px;
+}
