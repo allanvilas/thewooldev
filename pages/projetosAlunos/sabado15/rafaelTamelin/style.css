@@ -1,0 +1,58 @@
+@import url ('https://fonts.googleapis.com/css2? family = Abrir + Sans: wght @ 300 & display = swap');
+.menu{
+    top:0px;
+    position: static;
+    margin-bottom: 100px;
+}
+.menu > ul{
+text-align: center;
+background-color: #00ffff;
+margin-top: 0px;
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+}
+.menu > ul > li{
+    display: inline-block;
+    font-size: 200%;
+    padding: 2%;
+}
+a{
+    text-decoration-line: none;
+}
+.post > a :hover{
+    font-size: 105%;
+    background-color: blue;
+    transition: 1s;
+}
+.post > a :hover{
+        font-size: 105%;
+        background-color: blue;
+        transition: 1s;
+}
+.linha{
+    max-width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.umaimg{
+    max-width: 80%;
+    margin-left: 10%;
+}
+.duasimg{
+    max-width: 80%;
+    margin-left: 10%;
+}
+.tresimg{
+    max-width: 80%;
+    margin-left: 10%;
+}
+.pers {
+    background-color: #00BFFF
+}
+mark{
+    background-color:blue;
+    color: cornsilk;
+}

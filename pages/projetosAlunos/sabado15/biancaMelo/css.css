@@ -1,0 +1,89 @@
+body{
+				font-family: sans-serif;
+				padding: 0px;
+				margin: 0px;
+				Background-color: white;
+}
+
+
+.menu{
+				top: 0px;
+				position: static;
+				margin-bottom: 100px;
+}
+.menu > ul{
+				text-align: center;
+				background-color:#fe948bfb;
+				margin-top: 0px;
+				
+}
+.menu > ul > li{
+				display: inline-block;
+				font-size: 200%;
+				padding: 2%;
+}
+a{
+				text-decoration-line: none;
+}
+.posts > a :hover{
+				font-size: 105%;
+				background-color: #fffff;
+				transition: 1s;
+}
+section{
+				background-color: #adfee8fb;
+				max-width: 80%;
+				margin-left: 10%;
+				border-radius: 6px;
+				padding: 2%;
+}
+footer{
+				text-align: center;
+				background: #fe948bfb;
+				width: 100%;
+				height: 100px;
+				position: relative;
+				bottom: 0;
+				left: 0;
+}
+.linha{
+				max-width: 100%;
+				display: inline-block;
+				margin-bottom: 20px;
+				text-align: center;
+}
+.umaimg > img{
+				max-width: 40%;
+				margin-left: 5%;
+}
+.duasimg > img{
+				max-width: 40%;
+				margin-left: 5%;
+}
+.tresimg > img{
+				max-width: 30%;
+				margin-left: 2%;
+}
+.pers{
+				background-color: white;
+}
+.imgnet > img{
+				max-width: 100%;
+				margin-bottom: 20px;
+				text-align: center;
+}
+
+.h1 {
+	font-family: 'Dancing Script', cursive;
+}
+
+.p{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100&display=swap');
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+*/
