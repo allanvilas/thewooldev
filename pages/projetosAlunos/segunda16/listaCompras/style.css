@@ -20,7 +20,7 @@ li{
 }
 .additem{
     padding: 8px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     border-radius: 6px;
     border-color: #fff;
 }
