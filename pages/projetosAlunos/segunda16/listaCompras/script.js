@@ -18,5 +18,8 @@ function addItem(){
 
 function renomeiaItem(item){
     var novoTexto = window.prompt("Insira o nome do Item");
+    if (novoTexto == ''){
+        return;
+    }
     item.innerHTML = novoTexto;  
 }
