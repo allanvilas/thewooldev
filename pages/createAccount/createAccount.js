@@ -34,12 +34,10 @@ $(document).change(function() {
             },
             pass1: {
                 required: true,
-                number: true,
                 minlength: 6,
             },
             pass2: {
                 required: true,
-                number: true,
                 minlength: 6,
                 equalTo: "#pass1",
             },
@@ -69,7 +67,7 @@ $(":input")
         //validateUser
         let user = document.getElementById('user');
         let usertest = document.getElementById('user').value;
-        let confirm = (/\s/g.test(usertest));
+        let confirm = (/\s/.test(usertest));
         console.log(confirm);
         if(!confirm){
             $(user).last().addClass("is-invalid");
@@ -97,8 +95,13 @@ $(":input")
 function updatePg(){
     let min = document.getElementsByClassName('is-valid').length;
     let setValue = (100/inputs)*min;
+    let subBtn = document.getElementById("sub");
     if(setValue >= 99){
-        $("#sub").last().removeClass("disable");
+        if(subBtn.classList.contains("disabled")){
+            subBtn.classList.remove("disabled");
+            subBtn.classList.remove("btn-outline-secondary");
+            subBtn.classList.add("btn-light");
+        }
         print("remove disabled" + " " + setValue);
     }
     else{

@@ -51,12 +51,11 @@ function excluirLinha(){
 }
 
 function editaLinha(){
-    if(!linhas[0].classList.contains('selecionado')){
-        return
-    }
     var novoTexto = window.prompt("Novo texto");
     if(novoTexto == ""){
         return;
     }
     linhas[0].innerHTML = novoTexto;
 }
+
+

@@ -14,12 +14,14 @@
 
     $result = $mysql_query($query);
 
-    if($result){
-        while($row = mysqli_fetch_array($result)){
-                $name = $row["nome"];
-                echo "Name: ".$name."br/>";
-        }
-    }
+    echo($result);
+
+    //if($result){
+    //    while($row = mysqli_fetch_array($result)){
+    //            $name = $row["nome"];
+    //            echo "Name: ".$name."br/>";
+   //     }
+    //}
 
     /* change default database to "world" */
     //$mysqli->select_db("world");

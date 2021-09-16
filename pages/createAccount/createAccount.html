@@ -17,7 +17,7 @@
 
 <body>
     <div class="CreateAccount col-md-4 col-sm-6 col-xs-6 container position-absolute top-50 start-50 translate-middle mt-5 mb-5">
-        <form id="criarConta" action="" method="post">
+        <form id="criarConta" action="../../php/createUser.php" method="POST">
             <!-- dados pessoais -->
             <header>
                 <div class="mx-auto text-center mt-4">
@@ -37,7 +37,7 @@
                 </div>
                 <div class="form-group col-md-6 mt-4">
                     <label for="dataNascimento">Data de nascimento</label>
-                    <input id="dataNascimento" type="date" class="form-control cp">
+                    <input id="dataNascimento" type="date" class="form-control cp" name="nascimento">
                 </div>
                 <div class="form-group col-md-6 mt-4">
                     <label for="telefone">Telefone</label>
@@ -71,7 +71,7 @@
                 <div id="progress" class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
 
-            <button type="button" class="btn btn-outline-secondary mb-5 sub" id="sub">Criar Acesso</button>
+            <button type="submit" class="btn btn-outline-secondary mb-5 sub" id="sub" >Criar Acesso</button>
         </form>
     </div>
     <script src="../../bootstrap/js/bootstrap.js"></script>
