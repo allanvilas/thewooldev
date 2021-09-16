@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body,h1,h2,label{
-    color:#999999;
+    color:#999999 !important;
     font-family: 'Varela Round', sans-serif;
 }
 
