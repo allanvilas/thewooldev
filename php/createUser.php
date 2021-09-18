@@ -1,5 +1,6 @@
-
 <?php
+    include "conexao.php";
+
     $nome = $_POST['name'];
     $sobrenome = $_POST['sobrenome'];
     $nascimento = $_POST['nascimento'];
@@ -13,18 +14,15 @@
         echo 'console.log("'.$msg.'")';
         echo '</script>';
     }
-    $mysqli = new mysqli("172.106.0.120", "thewooldevadmin", "7436801aA@", "usersdata");
-        if ($mysqli->connect_errno) {
-            echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-        }
-    if($mysqli->query("INSERT INTO `users`(`nome`, `sobrenome`, `nascimento`, `telefone`, `user`, `pass`, `email`) VALUES ('$nome','$sobrenome','$nascimento','$telefone','$user','$password','$email')") === true){
+    
+    if($db->query("INSERT INTO `users`(`nome`, `sobrenome`, `nascimento`, `telefone`, `user`, `pass`, `email`) VALUES ('$nome','$sobrenome','$nascimento','$telefone','$user','$password','$email')") === true){
         msg("inserted into database");
     }
     else{
         msg("failed");
     }
 
-    $mysqli->close();
+    $db->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">

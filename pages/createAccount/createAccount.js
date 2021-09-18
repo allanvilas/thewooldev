@@ -5,6 +5,9 @@ var progressBar = document.getElementById('progress');
 const form = $("#criarConta");
 const submitButton = $("#sub");
 
+var isUserValid = 1;
+var isEmailValid = 1;
+
 $(document).ready(function(){
     updatePg(); 
 });
@@ -28,10 +31,6 @@ $(document).change(function() {
                 minlength: 14,
                 maxlength: 16
             },
-            user: {
-                required: true,
-                minlength: 6,
-            },
             pass1: {
                 required: true,
                 minlength: 6,
@@ -41,19 +40,30 @@ $(document).change(function() {
                 minlength: 6,
                 equalTo: "#pass1",
             },
-            email: {
-                required: true,
-                email: true,
-            },
         },
         messages:{
-            name:"insira um nome válido, somente caracteres",                 
-            sobrenome:"insira um sobrenome válido",    
-            telefone:"Insira um telefone válido (xx) x.xxxx-xxxx",
-            user:"Usuário incorreto, utilize a-Z, 0-9 sem espaços, mínimo 6 caracteres",
-            pass1:"Somente letras e números sem espaços, mínimo 6 digitos a-Z, 0-9",
-            pass2:"senha não compatível",
-            email:"Padrão de e-mail incorreto",
+            name:{
+                required: "Obrigatório.",
+                minlength: "Não corresponde ao tamanho mínimo."
+            },               
+            sobrenome:{
+                required: "Obrigatório.",
+                minlength: "Não corresponde ao tamanho mínimo."
+            },    
+            telefone:{
+                required: "Obrigatório.",
+                minlength: "Não corresponde ao tamanho mínimo.",
+                maxlength: "Ultrapassa o tamanho máximo.",
+            },
+            pass1:{
+                required: "Obrigatório.",
+                minlength: "Não corresponde ao tamanho mínimo.",
+            },
+            pass2:{
+                required: "Obrigatório.",
+                minlength: "Não corresponde ao tamanho mínimo.",
+                equalTo: "Confirme a senha.",
+            },
         },
     });
 });
@@ -63,17 +73,7 @@ $("button").click(function(){
 });
 $(":input")
     .keypress(function() {
-    
-        //validateUser
-        let user = document.getElementById('user');
-        let usertest = document.getElementById('user').value;
-        let confirm = (/\s/.test(usertest));
-        console.log(confirm);
-        if(!confirm){
-            $(user).last().addClass("is-invalid");
-        }
         //validatePass
-        
         updatePg();
         let tel = document.getElementById('telefone');
         let telValue = tel.value;
@@ -83,14 +83,7 @@ $(":input")
             updatePg();
             console.log("deu certo");
         }
-    })
-    .focusin(function() {
-        updatePg();
-    })
-    .focusout(function() {
-        updatePg();
-    })
-    ;
+    });
 
 function updatePg(){
     let min = document.getElementsByClassName('is-valid').length;
@@ -110,6 +103,73 @@ function updatePg(){
     }
     document.getElementById('progress').style.width = (setValue+"%");  
 }
+
+$("#user").keyup(function(){
+        let user = $(this).val();
+        let confirm = (/\s/.test(user));
+        console.log(confirm);
+
+        $.post('../../php/validateUser.php',{'user':user}, function(data){
+            let isValid = data;
+            isValid = Number(isValid);
+            isUserValid = isValid;
+            console.log(isUserValid);
+        });
+        
+
+        if(confirm){
+            $("#user").removeClass("is-valid");
+            $("#user").addClass("is-invalid");
+            $("#usrmsg").text("há espaço em branco");
+        }
+        else if(user.length < 6){
+            $("#user").removeClass("is-valid");
+            $("#user").addClass("is-invalid");
+            $("#usrmsg").text("Não atinge o tamanho mínimo.");
+        }
+        else if(isUserValid == 1){
+            $("#user").removeClass("is-valid");
+            $("#user").addClass("is-invalid");
+            $("#usrmsg").text("Usuário já existe!");
+        }
+        else{
+            $("#user").addClass("is-valid");
+            $("#usrmsg").text("");
+        }
+});
+
+$("#email").keyup(function(){
+    let email = $(this).val();
+    let confirm = (/\s/.test(email));
+    console.log(confirm);
+
+    $.post('../../php/validateEmail.php',{'email':email}, function(data){
+        let isValid = data;
+        isValid = Number(isValid);
+        isEmailValid = isValid;
+        console.log(isEmailValid);
+    });
+    
+    if(confirm){
+        $("#email").removeClass("is-valid");
+        $("#email").addClass("is-invalid");
+        $("#emailmsg").text("há espaço em branco");
+    }
+    else if(email.length < 5){
+        $("#email").removeClass("is-valid");
+        $("#email").addClass("is-invalid");
+        $("#emailmsg").text("Não atinge o tamanho mínimo.");
+    }
+    else if(isEmailValid == 1){
+        $("#email").removeClass("is-valid");
+        $("#email").addClass("is-invalid");
+        $("#emailmsg").text("E-mail já cadastrado!");
+    }
+    else{
+        $("#email").addClass("is-valid");
+        $("#emailmsg").text("");
+    }
+});
 
 function print(arg){
     console.log(arg);
