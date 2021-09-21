@@ -43,12 +43,13 @@ function selecionaLinha(linha){
     }
     //Tira o estilo da linhas anterior
     if(linhaSelecionado[1].classList.contains('selecionado')){
-        linhaSelecionado[1].classList.remove('selecionado');    
+        linhaSelecionado[1].classList.remove('selecionado');
+        //#############
+        linhaSelecionado[0].setAttribute("contenteditable","false");
     }
 }
-
 function renomeiaItem(){
-    if(linhaSelecionado[0] == 0){
+    /*if(linhaSelecionado[0] == 0){
         return;
     }
     
@@ -56,7 +57,12 @@ function renomeiaItem(){
     if (novoTexto == ''){
         return;
     }
-    linhaSelecionado[0].innerHTML = novoTexto;  
+    linhaSelecionado[0].innerHTML = novoTexto;*/
+    //#############
+    if(linhaSelecionado[0].hasAttribute("contenteditable")){
+        return;
+    }
+    linhaSelecionado[0].setAttribute("contenteditable","true");
 }
 
 function excluirItem(){
