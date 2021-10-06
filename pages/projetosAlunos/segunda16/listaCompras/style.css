@@ -49,7 +49,6 @@ section > header{
     
 }
 .lista li{
-    word-wrap: break-word;
     transition: 0.5s;
     color: #E1E1E1;
     border-radius: 10px;

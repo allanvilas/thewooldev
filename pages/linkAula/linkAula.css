@@ -1,14 +1,14 @@
 a{
     text-decoration-line: none !important;
     color:#363636 !important;
+    cursor: pointer !important;
 }
 
-li{
-    background-color: #fff;
-    transition: 0.8s;
+.animated{
+    animation-name: fadeIn !important;
+    animation-duration: 2s !important;
 }
-
-li:hover{
-    background-color: #d9d9d9;
-    transition: 0.5s;
+@keyframes fadeIn {
+    0% {opacity:0;}
+  100% {opacity:1;}
 }

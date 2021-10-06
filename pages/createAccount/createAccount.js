@@ -13,7 +13,7 @@ $(document).ready(function(){
 });
 
 //validação dos inputs
-$(document).change(function() {
+/*$(document).change(function() {
   $("#criarConta").validate({
         errorClass: "is-invalid",
         validClass: "is-valid",
@@ -66,7 +66,7 @@ $(document).change(function() {
             },
         },
     });
-});
+});*/
 //botão de envio de informações e validação
 $("button").click(function(){
     console.log(form.valid());
@@ -89,7 +89,7 @@ function updatePg(){
     let min = document.getElementsByClassName('is-valid').length;
     let setValue = (100/inputs)*min;
     let subBtn = document.getElementById("sub");
-    if(setValue >= 99){
+    if(setValue >= 99 && isUserValid == 0 && isEmailValid == 0){
         if(subBtn.classList.contains("disabled")){
             subBtn.classList.remove("disabled");
             subBtn.classList.remove("btn-outline-secondary");
@@ -105,50 +105,84 @@ function updatePg(){
 }
 
 $("#user").keyup(function(){
-        let user = $(this).val();
-        let confirm = (/\s/.test(user));
-        console.log(confirm);
 
+        let objUser = document.getElementById("user");
+
+        let user = $(this).val();
         $.post('../../php/validateUser.php',{'user':user}, function(data){
             let isValid = data;
             isValid = Number(isValid);
             isUserValid = isValid;
-            console.log(isUserValid);
+            console.log("user:"+isUserValid);
         });
+    
         
+        let confirm = (/\s/.test(user));
+        console.log(confirm);
 
         if(confirm){
-            $("#user").removeClass("is-valid");
-            $("#user").addClass("is-invalid");
+            if(objUser.classList.contains("is-valid")){
+                $("#user").addClass("is-invalid");
+                $("#user").removeClass("is-valid");
+            }
+            else{
+                $("#user").addClass("is-invalid");
+            }
             $("#usrmsg").text("há espaço em branco");
+            return updatePg();
         }
         else if(user.length < 6){
-            $("#user").removeClass("is-valid");
-            $("#user").addClass("is-invalid");
+            if(objUser.classList.contains("is-valid")){
+                $("#user").addClass("is-invalid");
+                $("#user").removeClass("is-valid");
+            }
+            else{
+                $("#user").addClass("is-invalid");
+            }
             $("#usrmsg").text("Não atinge o tamanho mínimo.");
+            return updatePg();
         }
         else if(isUserValid == 1){
-            $("#user").removeClass("is-valid");
-            $("#user").addClass("is-invalid");
+            if(objUser.classList.contains("is-valid")){
+                $("#user").addClass("is-invalid");
+                $("#user").removeClass("is-valid");
+            }
+            else{
+                $("#user").addClass("is-invalid");
+            }
             $("#usrmsg").text("Usuário já existe!");
+            return updatePg();
         }
         else{
-            $("#user").addClass("is-valid");
-            $("#usrmsg").text("");
+            if(objUser.classList.contains("is-valid")){
+                $("#user").removeClass("is-invalid");
+            }
+            else{
+                $("#user").addClass("is-valid");
+                $("#user").removeClass("is-invalid");
+            }
+            $("#usrmsg").text("Ok");
+            return updatePg();
         }
 });
 
 $("#email").keyup(function(){
+
     let email = $(this).val();
-    let confirm = (/\s/.test(email));
-    console.log(confirm);
 
     $.post('../../php/validateEmail.php',{'email':email}, function(data){
         let isValid = data;
         isValid = Number(isValid);
         isEmailValid = isValid;
-        console.log(isEmailValid);
+        console.log("Email:"+isEmailValid);
     });
+
+    
+    //alterado o validate do email
+    let confirm = (/\s/.test(email));
+    console.log(confirm);
+
+    
     
     if(confirm){
         $("#email").removeClass("is-valid");
