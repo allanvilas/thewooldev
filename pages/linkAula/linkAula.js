@@ -3,6 +3,10 @@ var idCount = 0;
 
 var turmas=[];
 
+const data = new Date();
+const dia = data.getDay();
+const hour = data.getHours();
+
 var dias = {
     1:'Segunda-Feira',
     2:'Terça-Feira',
@@ -14,6 +18,7 @@ var dias = {
 
 function addCard(data){
 
+    
     data.forEach(function(turma,index) {
         index = (index+1);
        // console.log(turma['subTitle']);
@@ -29,7 +34,7 @@ function addCard(data){
 
         let innDive = document.createElement("div");
         innDive.id = ("innDIve_"+cardID);
-        $(innDive).addClass("card-body bg-light m-3 animated");
+        $(innDive).addClass("card-body bg-light m-3 animated border rounded border-success");
         
         //Card Title
         let cardTitle = document.createElement("h5");
@@ -55,11 +60,21 @@ function addCard(data){
         
         //Card link
         let link = document.createElement("a");
+        let aulaBtn = document.createElement("button");
+        $(link).append(aulaBtn);
         link.id = ("link_"+cardID);
-        $(link).text("Entrar na Aula");
-        $(link).addClass("card-link");
-        $(link).attr("target","_blank");
-        $(link).attr("href",turma['link']);
+        $(aulaBtn).text("Entrar na Aula");
+        $(aulaBtn).addClass("btn btn-success btn-lg btn-block");
+            if(turma['diaAula'] == dia){
+                console.log(dias[dia]);
+                $(link).attr("target","_blank");
+                $(link).attr("href",turma['link']);
+            }
+            else{
+                $(aulaBtn).attr("disabled","disabled");
+                $(link).attr("href","#");
+            }
+        
 
         let elements = [cardTitle,cardSubTitleTwo,cardSubTitle,cardText,link];
 

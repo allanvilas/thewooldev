@@ -1,22 +1,28 @@
 <?php
+    //Conecta ao banco
     include "../../php/conexao.php";
 
-    $query = "SELECT turmas.codTurma, turmas.diaAula, turmas.horaInicio, turmas.prof, linksTurmas.link FROM turmas RIGHT JOIN linksTurmas ON turmas.codTurma = linksTurmas.turma;";
+    //Query
+    $query = "SELECT turmas.codTurma, turmas.diaAula, turmas.horaInicio, turmas.prof, linksTurmas.link FROM turmas RIGHT JOIN linksTurmas ON turmas.codTurma = linksTurmas.turma ORDER BY turmas.diaAula;";
 
+    //Execução da query retornando em $result
     $result = $db -> query($query);
 
+    //Array que guardara os dados solicitados ao db
     $turmas= array();
 
+    //Auxiliar para contador
     $i = 0;
 
-    $teste = array ('a'=>10,'b'=>5);
-
+    //Loop que faz requisição das 'rows' do db.
     while($row = $result->fetch_assoc()){
-        //echo "<br>"; 
-        //printf("\n%s\n",$row["codTurma"]);
+        //index formatado
         $i = ''.$i.'';
+
+        //push do index dentro da array
         array_push($turmas,$i);
 
+        //atribuição dos valores das rows para as 
         $turmas[$i] = array([
             "turma" => $row["codTurma"],
             "dia" => $row["diaAula"],
@@ -24,35 +30,8 @@
             "professor" => $row["prof"],
             "link" => $row["link"]
         ]);
-        /*
-        $turmas[$i] =
-           $row["codTurma"] array( 
-            "turma" => $row["codTurma"],
-            "dia" => $row["diaAula"],
-            "horario" => $row["horaInicio"],
-            "professor" => $row["prof"]
-            ));
-        */$i++;
+        $i++;
     }
     echo json_encode($turmas) ;
-
-/*
-var obj = {
-    title: "Turma",
-    subTitle: "Horario",
-    text: "Professor",
-    link: "Teste"
-};
-*/
-    
-
-    /*
-    if($result = $db -> $query("select * from turmas;")){
-        while($row = $result->fetch_assoc()){
-            printf("%s (%s)\n",$row["codeTurma"],$row["diaAula"]);
-        }
-    $result -> close();
-    }*/
-
 $db -> close();
 ?>
