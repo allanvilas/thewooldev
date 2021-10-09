@@ -14,11 +14,15 @@ var dias = {
     4:'Quinta-Feira',
     5:'Sexta-Feira',
     6:'Sábado'
-}
+};
 
+function teste(){
+    console.log("hora: "+hour)
+};
+teste();
 function addCard(data){
 
-    
+
     data.forEach(function(turma,index) {
         index = (index+1);
        // console.log(turma['subTitle']);
@@ -50,7 +54,8 @@ function addCard(data){
 
         let cardSubTitle = document.createElement("h6");
         cardSubTitle.id = ("cardSubTitle_"+cardID);
-        $(cardSubTitle).text(turma['subTitle'].slice(0,5)+ " - " + (Number(turma['subTitle'].slice(0,2))+2)+":00");
+        let horaAula = Number(turma['subTitle'].slice(0,2));
+        $(cardSubTitle).text(turma['subTitle'].slice(0,5)+ " - " + (horaAula+2)+":00");
         $(cardSubTitle).addClass("card-subtitle mb-2 text-muted");
 
         //Card Text
@@ -65,7 +70,7 @@ function addCard(data){
         link.id = ("link_"+cardID);
         $(aulaBtn).text("Entrar na Aula");
         $(aulaBtn).addClass("btn btn-success btn-lg btn-block");
-            if(turma['diaAula'] == dia){
+            if(turma['diaAula'] == dia & (horaAula == hour | (horaAula+1) == hour)){
                 console.log(dias[dia]);
                 $(link).attr("target","_blank");
                 $(link).attr("href",turma['link']);
@@ -75,7 +80,6 @@ function addCard(data){
                 $(link).attr("href","#");
             }
         
-
         let elements = [cardTitle,cardSubTitleTwo,cardSubTitle,cardText,link];
 
         $(divBase).append(innDive);

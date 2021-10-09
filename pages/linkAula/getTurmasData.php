@@ -3,7 +3,7 @@
     include "../../php/conexao.php";
 
     //Query
-    $query = "SELECT turmas.codTurma, turmas.diaAula, turmas.horaInicio, turmas.prof, linksTurmas.link FROM turmas RIGHT JOIN linksTurmas ON turmas.codTurma = linksTurmas.turma ORDER BY turmas.diaAula;";
+    $query = "SELECT turmas.codTurma, turmas.diaAula, turmas.horaInicio, turmas.prof, linksTurmas.link FROM turmas RIGHT JOIN linksTurmas ON turmas.codTurma = linksTurmas.turma ORDER BY turmas.diaAula, turmas.horaInicio;";
 
     //Execução da query retornando em $result
     $result = $db -> query($query);
