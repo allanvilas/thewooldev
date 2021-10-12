@@ -1,0 +1,20 @@
+.menu:hover{
+    box-shadow: 0px 10px 10px #2a202a;
+    transition: 0.5s ease-in;
+}
+.menu{
+    transition: 1s ease-in;
+}
+.menu a {
+    color: #fff0f4 !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600 !important;
+    transition: 0.3s ease-in;
+}
+.menu a:hover {
+    transition: 0.3s ease-in;
+    color: #b534df !important;
+}
+.menu-icon{
+    fill: #b534df !important; 
+}
