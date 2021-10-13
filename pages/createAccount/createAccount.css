@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body,h1,h2,label{
     color:#999999 !important;
@@ -9,4 +9,23 @@ body,h1,h2,label{
     border-radius: 20px;
     border-bottom-color: #999;
     border-bottom-width: 6px;
+}*/
+
+.pgbar{
+    background-color:#b534df !important;
+}
+
+input{
+    border:none !important;
+    background-color:#b534df20 !important;
+    border-left:3px solid #ce78eb !important;
+    color: #ffffff80 !important;
+}
+input::placeholder{
+
+    color: #ffffff90 !important;
+}
+input:active{
+    border:none !important;
+    background-color:#fff !important;
 }
