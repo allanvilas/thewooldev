@@ -8,6 +8,7 @@
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <script src="js/main.js"></script>
+        
     </head>
     <body class="container-fluid">
 
@@ -31,48 +32,62 @@
 
         <main class="mt-5">
             <section>
-                    <div class="row mx-auto">
-                    
+                <div class="row mx-auto">
+                    <!-- div de espaçamento -->
+                    <div class="col-xl-2 col-md-1 col-sm-0"></div>
+                    <!-- div de conteúdo -->
+                    <div class="col-xl-8 col-md-10 p-5 col-sm-12">
                         <!-- JUMBO -->
-                        <div class="p-5">
-                            <div class="jumbotron mb-5 p-3 jumbo">
-                                <h2 id="A2"></h4>
-                                <h1 class="display-4" id="A1"></h1>
-                                <h3>As you prefer.</h5>
-                                <p class="lead" id="A3">I'm a web and game design instructor, student of game design at fatec and a kind of artist sometimes.</p>
-                                <hr class="my-4" id="A4">
-                                <p>This website is my portfolio and tool that im use on my lectures, please take a look.</p>
+                        <div class="jumbotron mb-5 p-3 jumbo">
+                            <h2 id="A2"></h4>
+                            <h1 class="display-4" id="A1"></h1>
+                            <h3>As you prefer.</h5>
+                            <p class="lead" id="A3">I'm a web and game design instructor, student of game design at fatec and a kind of artist sometimes.</p>
+                            <hr class="my-4" id="A4">
+                            <p>This website is my portfolio and tool that im use on my lectures, please take a look.</p>
+                        </div>
+                        <div class="container-fluid mx-auto d-flex justify-content-center">
+                            <!-- Carrossel -->
+                            <div id="carouselArt" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/arts/1.jpg">
+                                    </div>
+                                    <div class="carousel-item img-fluid ">
+                                        <img src="img/arts/2.jpg">
+                                    </div>
+                                    <div class="carousel-item img-fluid">
+                                        <img src="img/arts/3.jpg">
+                                    </div>
+                                    <div class="carousel-item img-fluid ">
+                                        <img src="img/arts/4.jpg">
+                                    </div>
+                                    <div class="carousel-item img-fluid ">
+                                        <img src="img/arts/5.jpg">
+                                    </div>
+                                    <div class="carousel-item img-fluid ">
+                                        <img src="img/arts/6.jpg">
+                                    </div>
+                                    <div class="carousel-item img-fluid ">
+                                        <img src="img/arts/7.jpg">
+                                    </div>
+                                    <div class="carousel-item img-fluid ">
+                                        <img src="img/arts/8.jpg">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-3">
-                            <header class="mb-2">
-                                <h2>Acessar Area do Aluno</h2>
-                            </header>
-                            <form>
-                                <div class="mb-3 ">
-                                    <input type="email" class="form-control" id="user" placeholder="Usuário">
-                                </div>
-                                <div class="mb-3 mx-auto">
-                                    <input type="password" class="form-control" id="senha" placeholder="Senha">
-                                </div>
-                                <button class="btn btn-outline-secondary" type="submit">Entrar</button>
-                                
-                            </form>
-                        </div>
-                        
                     </div>
-                    <div class="row mx-auto">
-                        <div class="col-md-3 mt-5 mb-3">
-                            <a href="pages/createAccount/createAccount.html">Clique para criar seu acesso</a>
-                        </div>
-                    </div>
+                    <!-- div de espaçamento -->
+                    <div class="col-xl-2 col-md-1 col-sm-0"></div>
             </section>
-            
         </main>    
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script>
+            var myCarousel = document.querySelector('#carouselArt');
+            var carousel = new bootstrap.Carousel(myCarousel);
+        </script>
     </body>
 </html>

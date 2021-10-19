@@ -38,21 +38,21 @@ function addCard(data){
 
         let innDive = document.createElement("div");
         innDive.id = ("innDIve_"+cardID);
-        $(innDive).addClass("card-body bg-light m-3 animated border rounded border-success");
+        $(innDive).addClass("card-body bg-light m-3 animated");
         
         //Card Title
-        let cardTitle = document.createElement("h5");
+        let cardTitle = document.createElement("h2");
         cardTitle.id = ("cardTitle_"+cardID);
         $(cardTitle).text(turma['title']);
         $(cardTitle).addClass("card-title mb-3");
         
         //Card Subtitle
-        let cardSubTitleTwo = document.createElement("h6");
+        let cardSubTitleTwo = document.createElement("h3");
         cardSubTitleTwo.id = ("cardSubTitle_"+cardID);
         $(cardSubTitleTwo).text(dias[turma['diaAula']]);
         $(cardSubTitleTwo).addClass("card-subtitle mb-2 text-muted");
 
-        let cardSubTitle = document.createElement("h6");
+        let cardSubTitle = document.createElement("h3");
         cardSubTitle.id = ("cardSubTitle_"+cardID);
         let horaAula = Number(turma['subTitle'].slice(0,2));
         $(cardSubTitle).text(turma['subTitle'].slice(0,5)+ " - " + (horaAula+2)+":00");
@@ -61,7 +61,7 @@ function addCard(data){
         //Card Text
         let cardText = document.createElement("p");
         cardText.id = ("cardText_"+cardID);
-        $(cardText).text(turma['text'].slice(0,12));
+        $(cardText).text(turma['text']);
         
         //Card link
         let link = document.createElement("a");
@@ -69,13 +69,15 @@ function addCard(data){
         $(link).append(aulaBtn);
         link.id = ("link_"+cardID);
         $(aulaBtn).text("Entrar na Aula");
-        $(aulaBtn).addClass("btn btn-success btn-lg btn-block");
             if(turma['diaAula'] == dia & (horaAula == hour | (horaAula+1) == hour)){
                 console.log(dias[dia]);
+                $(innDive).addClass("aulaActive");
+                $(aulaBtn).addClass("btn btn-success btn-lg btn-block");
                 $(link).attr("target","_blank");
                 $(link).attr("href",turma['link']);
             }
             else{
+                $(aulaBtn).addClass("btn btn-secondary btn-lg btn-block");
                 $(aulaBtn).attr("disabled","disabled");
                 $(link).attr("href","#");
             }

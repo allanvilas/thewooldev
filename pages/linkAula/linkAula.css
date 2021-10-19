@@ -5,10 +5,26 @@ a{
 }
 
 .animated{
+    transition: 1s ease-out;
+    border-radius: 0.5em;
     animation-name: fadeIn !important;
     animation-duration: 2s !important;
+    outline: 0.1em #3e3342 solid;
+}
+
+.aulaActive{
+    outline: 0.5em #42cf35 solid;
+}
+
+.animated:hover{
+    transition: 0.5s ease-in;
+    outline: 0.8em #b534df solid;
 }
 @keyframes fadeIn {
     0% {opacity:0;}
   100% {opacity:1;}
+}
+p{
+    font-family: 'Heebo', sans-serif;
+    color:#b4234a !important;    
 }
