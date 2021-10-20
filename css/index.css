@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
 body{
     padding:0px !important;
 }
@@ -25,4 +26,114 @@ body{
 .jumbo{
     border:none;
     border-left: 10px solid #b534df;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.contact{
+    position: relative;
+    font-size: 5rem; 
+    color: #272727;
+    display: inline-block;
+    transition: 2s ease-out;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media screen and (max-width:980px){
+    .bi-linkedin{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        color: #0a66c2 !important;
+        text-shadow: 0px 0px 10px #b534df60;
+        border-bottom: 4px solid #0a66c2;
+    }
+    .bi-github{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        color: #fff !important;
+        text-shadow: 0px 0px 10px #b534df60;
+        border-bottom: 4px solid #fff;
+    }
+    
+    .bi-instagram{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        text-shadow: 0px 0px 10px #fd5949;
+        border-width: 4px;
+        border-style: solid;
+        border-top:0;
+        border-image: 
+        radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)45 0;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .bi-whatsapp{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        color: #25d366 !important;
+        text-shadow: 0px 0px 10px #b534df60;
+        border-bottom: 4px solid #25d366;
+    }
+    
+    .bi-envelope{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        color: #b534df !important;
+        text-shadow: 0px 0px 10px #b534df60;
+        border-bottom: 4px solid #b534df;
+    }
+}
+
+@media screen and (min-width:981px){
+    .bi-linkedin:hover{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        color: #0a66c2 !important;
+        text-shadow: 0px 0px 10px #b534df60;
+        border-bottom: 4px solid #0a66c2;
+    }
+    .bi-github:hover{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        color: #fff !important;
+        text-shadow: 0px 0px 10px #b534df60;
+        border-bottom: 4px solid #fff;
+    }
+    
+    .bi-instagram:hover{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        text-shadow: 0px 0px 10px #fd5949;
+        border-width: 4px;
+        border-style: solid;
+        border-top:0;
+        border-image: 
+        radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)45 0;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .bi-whatsapp:hover{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        color: #25d366 !important;
+        text-shadow: 0px 0px 10px #b534df60;
+        border-bottom: 4px solid #25d366;
+    }
+    
+    .bi-envelope:hover{
+        font-size: 4.7rem;
+        transition: 0.2s ease-out;
+        color: #b534df !important;
+        text-shadow: 0px 0px 10px #b534df60;
+        border-bottom: 4px solid #b534df;
+    }
 }

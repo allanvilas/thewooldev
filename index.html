@@ -12,14 +12,16 @@
     </head>
     <body class="container-fluid">
 
-        <nav class="navbar navbar-expand-lg menu p-3 mb-5 col-12">
+        <nav class="navbar navbar-expand-lg menu p-3 mb-5 col-12 text-center">
             <a class="navbar-brand" href="#">
               <img src="img/logo/twlogo/tw-logo-60-wt.png" class="d-inline-block align-top" alt="">
             </a>
-            <a class="navbar-brand" href="#">TheWool</a>
-            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <figure class="figure img-fluid " >
-                    <img src="img/icons/svg/menu.svg" class="mx-auto d-block menu-icon" alt="menu" width="300%">
+            <div class="">
+                <a class="navbar-brand" href="#">TheWool</a>
+            </div>
+            <button class="navbar-toggler mr-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <figure class="figure img-fluid" >
+                    <i class="bi bi-list" style="font-size: 3rem; color: #b534df;"></i>
                 </figure>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -39,44 +41,85 @@
                     <div class="col-xl-8 col-md-10 p-5 col-sm-12">
                         <!-- JUMBO -->
                         <div class="jumbotron mb-5 p-3 jumbo">
-                            <h2 id="A2"></h4>
+                            <h2 id="A2"></h2>
                             <h1 class="display-4" id="A1"></h1>
-                            <h3>As you prefer.</h5>
+                            <h3>As you prefer.</h3>
                             <p class="lead" id="A3">I'm a web and game design instructor, student of game design at fatec and a kind of artist sometimes.</p>
                             <hr class="my-4" id="A4">
-                            <p>This website is my portfolio and tool that im use on my lectures, please take a look.</p>
+                            <p>This website is my portfolio and a tool that I'm using on my lectures, please fell free to take a look.</p>
                         </div>
-                        <div class="container-fluid mx-auto d-flex justify-content-center">
-                            <!-- Carrossel -->
-                            <div id="carouselArt" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="img/arts/1.jpg">
-                                    </div>
-                                    <div class="carousel-item img-fluid ">
-                                        <img src="img/arts/2.jpg">
-                                    </div>
-                                    <div class="carousel-item img-fluid">
-                                        <img src="img/arts/3.jpg">
-                                    </div>
-                                    <div class="carousel-item img-fluid ">
-                                        <img src="img/arts/4.jpg">
-                                    </div>
-                                    <div class="carousel-item img-fluid ">
-                                        <img src="img/arts/5.jpg">
-                                    </div>
-                                    <div class="carousel-item img-fluid ">
-                                        <img src="img/arts/6.jpg">
-                                    </div>
-                                    <div class="carousel-item img-fluid ">
-                                        <img src="img/arts/7.jpg">
-                                    </div>
-                                    <div class="carousel-item img-fluid ">
-                                        <img src="img/arts/8.jpg">
+
+                        <section class="m-2">
+                            
+                            <article>
+                                <div class="row">
+                                <div class="col-xl-3 col-md-2"></div>
+                                <div class="col-xl-6 col-md-10 col-sm-12">
+                                    <header>
+                                        <h3>My social media</h3>
+                                    </header>
+                                    <div class="d-flex justify-content-between">
+                                        <a><i class="contact bi bi-linkedin" ></i></a>
+                                        <a><i class="contact bi bi-github" ></i></a>
+                                        <a><i class="contact bi bi-instagram" ></i></a>
+                                        <a><i class="contact bi bi-whatsapp" ></i></a>
+                                        <a><i class="contact bi bi-envelope" ></i></a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                                </div>
+                            </article>
+                        </section>
+
+                        <section>
+                            <header>
+                                <h3>Some Arts that i made:</h3>
+                            </header>
+                            <article>
+                                <div class="mt-3 container-fluid mx-auto d-flex justify-content-center">
+                                    <!-- Carrossel -->
+                                    <div id="carouselArt" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="img/arts/1.jpg" class=" img-fluid rounded">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/arts/2.jpg" class=" img-fluid rounded">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/arts/3.jpg" class=" img-fluid rounded">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/arts/4.jpg" class=" img-fluid rounded">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/arts/5.jpg" class=" img-fluid rounded">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/arts/6.jpg" class=" img-fluid rounded">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/arts/7.jpg" class=" img-fluid rounded">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/arts/8.jpg" class=" img-fluid rounded">
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselArt" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                              </button>
+                                              <button class="carousel-control-next" type="button" data-bs-target="#carouselArt" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                              </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+
+                        <figure class="img-fluid">
+                            <img src="img/arts/thewoolart-digital-card.png" alt="Perfil" class="img-fluid">
+                        </figure>
                     </div>
                     <!-- div de espaçamento -->
                     <div class="col-xl-2 col-md-1 col-sm-0"></div>
