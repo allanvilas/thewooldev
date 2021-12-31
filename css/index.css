@@ -48,14 +48,14 @@ body{
 
 @media screen and (max-width:980px){
     .bi-linkedin{
-        font-size: 3rem;
+        font-size: 2.5rem;
         transition: 0.2s ease-out;
         color: #0a66c2 !important;
         text-shadow: 0px 0px 10px #b534df60;
         border-bottom: 4px solid #0a66c2;
     }
     .bi-github{
-        font-size: 3rem;
+        font-size: 2.5rem;
         transition: 0.2s ease-out;
         color: #fff !important;
         text-shadow: 0px 0px 10px #b534df60;
@@ -63,7 +63,7 @@ body{
     }
     
     .bi-instagram{
-        font-size: 3rem;
+        font-size: 2.5rem;
         transition: 0.2s ease-out;
         text-shadow: 0px 0px 10px #fd5949;
         border-width: 4px;
@@ -77,7 +77,7 @@ body{
     }
     
     .bi-whatsapp{
-        font-size: 3rem;
+        font-size: 2.5rem;
         transition: 0.2s ease-out;
         color: #25d366 !important;
         text-shadow: 0px 0px 10px #b534df60;
@@ -85,7 +85,7 @@ body{
     }
     
     .bi-envelope{
-        font-size: 3rem;
+        font-size: 2.5rem;
         transition: 0.2s ease-out;
         color: #b534df !important;
         text-shadow: 0px 0px 10px #b534df60;

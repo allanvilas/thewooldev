@@ -42,13 +42,13 @@ label{
     color: #b534df;
 }
 .socialMedia{
-    -webkit-box-shadow: 0 -10px 20px -22px #b534df;
-       -moz-box-shadow: 0 -10px 20px -22px #b534df;
-            box-shadow: 0 -10px 10px -10px #b534df;
+    -webkit-box-shadow: 0 10px 10px -10px #b534df;
+       -moz-box-shadow: 0 10px 10px -10px #b534df;
+            box-shadow: 0 10px 10px -10px #b534df;
 }
 
 .socialMedia2{
-    -webkit-box-shadow: 0 10px 4px 10px #b534df;
-       -moz-box-shadow: 0 10px 4px 10px #b534df;
+    -webkit-box-shadow: 0 -10px 10px -10px #b534df;
+       -moz-box-shadow: 0 -10px 10px -10px #b534df;
             box-shadow: 0 -10px 10px -10px #b534df;
 }
