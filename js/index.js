@@ -88,7 +88,7 @@ for(i=0;i<=obj.length;i++){
         $(div).addClass("d-flex flex-wrap justify-content-start");
         $(title).addClass("jumbo");
     }
-
+    $(jumbo).attr("data-aos-duration","1500");
     $(container).append(title);
     $(container).append(div);
     $(jumbo).append(container);
