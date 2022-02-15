@@ -5,23 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Hey, I'm Allan, this website is my portfolio and a tool that I'm using on my lectures, please fell free to take a look.">
         <meta property="og:locale" content="pt_BR">
-        <meta property="og:url" content="https://ik.imagekit.io/thewooldev/preview_R3oG8FnTl.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1642467381940&tr=w-1200%2Ch-628%2Cfo-auto"/>
+        <meta property="og:url" content="https://www.thewool.dev.br/"/>
         <meta property="og:site_name" content="The Wool Dev"/>
         <meta property="og:title" content="Personal Portfolio"/>
         <meta property="og:type" content="website"/>
         <meta property="og:image:type" content="image/svg">
-        <!--<meta property="og:image" content="https://ik.imagekit.io/thewooldev/tw-svg_b9eqSqEeg-j.svg?updatedAt=1640968444154"/>-->
-        <meta property="og:image" content="https://ik.imagekit.io/thewooldev/preview_R3oG8FnTl.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1642467381940&tr=w-1200%2Ch-628%2Cfo-auto"/> 
-        <meta property="og:image:width" content="480"/>
-        <meta property="og:image:height" content="252"/>
+        <meta property="og:image" content="https://ik.imagekit.io/thewooldev/tw-svg_b9eqSqEeg-j.svg?updatedAt=1640968444154"/> 
+        <meta property="og:image:width" content="400"/>
+        <meta property="og:image:height" content="500"/>
         <meta property="og:description" content="Hey, I'm Allan, this website is my portfolio and a tool that I'm using on my lectures, please fell free to take a look."/>
         <title>The Wool Dev</title>
         <link type="text/css" rel="stylesheet" href="css/index.css">
         <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/icons.css">
         <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <style>
+            
             @media screen and (max-height:500px){
                 .game{
                     width: 100%;
@@ -32,7 +34,7 @@
     </head>
     <body class="container-fluid ">
         <!-- Menu -->
-        <nav class="navbar navbar-expand-lg menu p-3 mb-5 col-12 text-center">
+        <nav class="navbar navbar-expand-lg menu p-3 mb-5 col-12 text-center" data-aos="fade-down" data-aos-duration="3000">
             <a class="navbar-brand" href="#">
               <img src="img/logo/twlogo/tw-svg.svg" class="d-inline-block align-top" alt="tw-logo" width="80px">
             </a>
@@ -60,7 +62,7 @@
                     <!-- div de conteúdo -->
                     <div class="col-xl-8 col-md-10 p-5 col-sm-12">
                         <!-- JUMBO -->
-                        <div class="jumbotron mb-5 p-3 jumbo">
+                        <div class="jumbotron mb-5 p-3 jumbo" data-aos="fade-right" data-aos-duration="1500">
                             <h2 id="A2"></h2>
                             <h1 class="display-4" id="A1"></h1>
                             <h3>As you prefer.</h3>
@@ -69,7 +71,7 @@
                             <p>This website is my portfolio and a tool that I'm using on my lectures, please fell free to take a look.</p>
                         </div>
 
-                        <section class="my-5 pt-3">
+                        <section class="my-5 pt-3" data-aos="fade-up" data-aos-duration="1800">
                             <!-- Social Media -->
                             <div class="socialMedia container-fluid mt-4" style="height: 40px;"></div>
                             <article class=" px-3">
@@ -90,18 +92,24 @@
                             </article>
                             <div class="socialMedia2 container-fluid mt-4" style="height: 40px;"></div>
                         </section>
+
+                        <!-- skill's section -->
+                        <section class="my-5 pt-3" id="jumboSkills">
+                        </section>
+
                         <!-- Game Implementation -->
-                        <!----> <section class="my-5">
+                        <!----> 
+                        <section class="my-5" style="margin:200px 0px 200px 0px !important;">
                             <header class="my-5 p-3 jumbo">
                                 <h3>Knight of Nothing</h3>
                             </header>
                             <article class="my-5 col-sm-12">
-                                <iframe title="Knight of Nothing | The Wool Dev"class="game" src="game/test/teste.html" width="100%" height="600"></iframe>
+                                <iframe class="game" src="game/test/teste.html" width="100%" height="600"></iframe>
                             </article>
                         </section>
                         <!---->
                         <section class="my-5">
-                            <header class="my-5 p-3 jumbo">
+                            <header class="my-5 p-3 jumbo" data-aos="fade-up">
                                 <h3>Some arts that I made:</h3>
                             </header>
                             <article class="my-5">
@@ -145,7 +153,7 @@
                             </article>
                         </section>
                     <!-- CheckoutMyshit -->
-                    <div class="text-center">
+                    <div class="text-center" data-aos="fade-down">
                         <h2>Want to see more?</h2>
                         <h3>Please, check my porfolio At:</h3>
                         <div class="row">
@@ -160,9 +168,13 @@
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/index.js"></script>
         <script>
             var myCarousel = document.querySelector('#carouselArt');
             var carousel = new bootstrap.Carousel(myCarousel);
+            AOS.init();
         </script>
     </body>
 </html>

@@ -1,0 +1,16 @@
+.devIcons{
+    font-size: 8rem !important;
+    color: #b534df60;
+    transition: 0.2s ease-out;
+}
+@media screen and (max-width:980px) {
+    .devIcons{
+        font-size: 4rem !important;
+    }
+}
+.devIcons:hover{
+    transition: 0.2s ease-out;
+    color: #b534df;
+    text-shadow: 0px 0px 10px #b534df60;
+    cursor: pointer;
+}

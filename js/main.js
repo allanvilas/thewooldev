@@ -3,7 +3,9 @@ const A2 = "Hello, It's-a-me";
 
 async function Typing(id,elem,interval) {
     var i=0;
+    console.log("teste");
     let A = setInterval(
+        
         () => {
         if(i<elem.length){
             document.getElementById(id).innerHTML += elem.charAt(i);

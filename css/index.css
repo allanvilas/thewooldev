@@ -32,6 +32,10 @@ body{
     border:none;
     border-left: 10px solid #b534df;
 }
+.jumboRight{
+    border:none;
+    border-right: 10px solid #b534df;
+}
 
 .navbar-toggler:focus {
     text-decoration: none;
