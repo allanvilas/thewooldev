@@ -1,10 +1,10 @@
 var obj =[
-[
+    [
     "devicon-debian-plain-wordmark",
     "devicon-windows8-original",
     "System that i'm use to work.",
     "system"
-    ],
+],
 [
     "devicon-javascript-plain",
     "devicon-jquery-plain-wordmark",
