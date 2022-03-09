@@ -95,5 +95,4 @@ for(i=0;i<=obj.length;i++){
     $(jumbo).addClass("mb-5");
     $(jumbo).addClass("mt-5");
     $("#jumboSkills").append(jumbo);
-   
 };
