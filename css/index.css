@@ -1,5 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
 
+blockquote{
+    color: #b534df !important;
+}
 .game{
     border: 10px solid #b534df50;
     border-radius: 8px;
@@ -7,21 +10,15 @@
 body{
     padding:0px !important;
 }
-.menu:hover{
-    box-shadow: 0px 10px 10px #2a202a;
-    transition: 0.5s ease-in;
-}
-.menu{
-    transition: 1s ease-in;
-}
+
 .menu a {
     color: #fff0f4 !important;
     font-family: 'Raleway', sans-serif;
     font-weight: 600 !important;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-in !important;
 }
 .menu a:hover {
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-in !important;
     color: #b534df !important;
 }
 .menu-icon{
@@ -148,4 +145,11 @@ body{
         text-shadow: 0px 0px 10px #b534df60;
         border-bottom: 4px solid #b534df;
     }
+}
+.menu:hover{
+    box-shadow: 0px 10px 10px #2a202a;
+    transition: 0.5s ease-in;
+}
+.menu{
+    transition: 1s ease-in;
 }

@@ -55,7 +55,7 @@ for(i=0;i<=obj.length;i++){
 
     $(jumbo).addClass("jumbotron");
     $(jumbo).addClass("jumbotron-fluid");
-    $(jumbo).addClass("col-sm-12 col-md-12 col-lg-12");
+    $(jumbo).addClass("container-fluid");
 
     $(container).addClass("container-fluid");
     
@@ -63,7 +63,7 @@ for(i=0;i<=obj.length;i++){
     let titleVar = obj[i][((obj[i].length)-2)];
 
     $(title).addClass("display-4");
-    $(title).addClass("p-3");
+    $(title).addClass("m-3");
     $(title).text(titleVar);
     
     $(div).addClass(obj[i][((obj[i].length)-1)]);
@@ -78,13 +78,13 @@ for(i=0;i<=obj.length;i++){
     };
 
     if(i%2 == 0){
-        $(jumbo).attr("data-aos","fade-left");
+        $(jumbo).attr("data-aos","zoom-in-down");
         $(jumbo).addClass("text-end");
         $(div).addClass("d-flex flex-wrap justify-content-end");
         $(title).addClass("jumboRight");
     }
     else{
-        $(jumbo).attr("data-aos","fade-right");
+        $(jumbo).attr("data-aos","zoom-in-up");
         $(div).addClass("d-flex flex-wrap justify-content-start");
         $(title).addClass("jumbo");
     }
