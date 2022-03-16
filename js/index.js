@@ -19,7 +19,7 @@ var obj =[
     "devicon-postgresql-plain-wordmark",
     "devicon-python-plain-wordmark",
     "devicon-apache-plain-wordmark",
-    "A back-end dos meus projetos.",
+    "A base back-end dos meus projetos.",
     "backEnd"
 ],
  [
@@ -55,7 +55,7 @@ for(i=0;i<=obj.length;i++){
 
     $(jumbo).addClass("jumbotron");
     $(jumbo).addClass("jumbotron-fluid");
-    $(jumbo).addClass("container-fluid");
+    
 
     $(container).addClass("container-fluid");
     
@@ -64,6 +64,7 @@ for(i=0;i<=obj.length;i++){
 
     $(title).addClass("display-4");
     $(title).addClass("m-3");
+    $(title).addClass("p-4");
     $(title).text(titleVar);
     
     $(div).addClass(obj[i][((obj[i].length)-1)]);
