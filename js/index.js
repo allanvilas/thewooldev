@@ -2,7 +2,7 @@ var obj =[
     [
     "devicon-debian-plain-wordmark",
     "devicon-windows8-original",
-    "System that i'm use to work.",
+    "Esses são os sistemas operacionais que utilizo.",
     "system"
 ],
 [
@@ -11,7 +11,7 @@ var obj =[
     "devicon-html5-plain-wordmark",
     "devicon-css3-plain-wordmark",
     "devicon-bootstrap-plain-wordmark",
-    "Front End technologies",
+    "Tecnologias Front-End que atualmente uso.",
     "frontEnd"
 ],
  [
@@ -19,7 +19,7 @@ var obj =[
     "devicon-postgresql-plain-wordmark",
     "devicon-python-plain-wordmark",
     "devicon-apache-plain-wordmark",
-    "Back End technologies",
+    "A back-end dos meus projetos.",
     "backEnd"
 ],
  [
@@ -28,12 +28,12 @@ var obj =[
     "devicon-trello-plain",
     "devicon-vscode-plain",
     "devicon-markdown-original",
-    "Tools to help manage",
+    "Algumas ferramentas para uso administrativo.",
     "projectAdm"
 ],
  [
     "devicon-godot-plain-wordmark",
-    "Engine that i'm develop on today",
+    "Engine que uso para jogos.",
     "engine"
 ],
   [
@@ -42,7 +42,7 @@ var obj =[
     "devicon-laravel-plain-wordmark",
     "devicon-sass-original",
     "devicon-unity-original",
-    "Tecnologies that i'm studying",
+    "Tecnologia que estou estudando.",
     "larnFuture"
 ]
 ];
