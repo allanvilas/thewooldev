@@ -16,7 +16,10 @@
                         Outro problema recorrente, é a falta de embasamento que muitos desses conteúdos apresentam, por vezes, os seres fantásticos que aparecem nessa literatura só possuem o nome como aspecto original de seu conteúdo. Associando os motivos apontados anteriormente, decidimos pôr em prática a ideia de produzir um projeto com tema proposto (viagem), relacionando com o sincretismo e a cultura dos povos que originaram essas histórias.
                         </p>
                         <!-- Video -->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gpRT6pxz-fE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="col-12">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gpRT6pxz-fE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
                         <h2>
                             Diferenciais do Jogo
                         </h2>
