@@ -19,9 +19,9 @@
                         <h2>
                             Diferenciais do Jogo
                         </h2>
-                        <h3>
+                        <p>
                             O game traz uma proposta diferente para um jogo clássico jogo de tabuleiro: a identidade de mitologia nórdica, que tem se tornado cada vez mais popular nas mídias digitais e com a preocupação de trazer isso de forma lúdica e bem embasada, tendo critérios que estejam bastante solidificados com o que existe de material original sobre essa temática.
-                        <h3>
+                        </p>
                     </div>
                 </article>
             </section>
