@@ -7,7 +7,7 @@
     <body class="container-fluid">
         <main class="mx-auto">
             <section class="my-5 container-fluid mx-auto ">
-                <article class="d-flex justify-content-center">
+                <article class="d-flex">
                     <div class="col-sm-2 col-md-3 col-lx-2">
                     </div>
                     <div class="col-sm-8 col-md-6 col-lx-8">
