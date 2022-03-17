@@ -26,6 +26,19 @@
                         <p>
                             O game traz uma proposta diferente para um jogo clássico jogo de tabuleiro: a identidade de mitologia nórdica, que tem se tornado cada vez mais popular nas mídias digitais e com a preocupação de trazer isso de forma lúdica e bem embasada, tendo critérios que estejam bastante solidificados com o que existe de material original sobre essa temática.
                         </p>
+                        <h2>
+                            Objetivos do jogo
+                        </h2>
+                        <p>
+                        Passar pelos nove reinos da Yggdrasil e chegar ao final, tomando o cuidado para não cair nas armadilhas, se vendo obrigado a voltar para um determinado estágio do jogo.
+                        </p>
+                        <h2>
+                            Idealizadores
+                        </h2>
+                            <p>Alexandre Fiorano Neto</p>
+                            <p>Gabriela Graciani </p>
+                            <p>Nayumi Menuzzo Akutagawa</p>
+                            <p>Allan Vilas Boas</p>
                     </div>
                 </article>
             </section>
