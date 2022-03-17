@@ -8,7 +8,7 @@
         <main class="mx-auto">
             <section class="my-5 container-fluid mx-auto d-flex justify-content-center">
                 <article>
-                <div class="col-sm-0 col-md-1 col-lx-2">
+                <div class="col-sm-0 col-md-1 col-lx-2"></div>
                     <div class="col-sm-12 col-md-10 col-lx-8">
                         <h1>Projeto AGA.INNST</h1>
                         <h2>De forma geral, a temática da mitologia nórdica tem se tornado cada vez mais popular entre o público jovem. São diversos os conteúdos midiáticos que fazem referência a esse assunto, como filmes de super-heróis, jogos de videogame, séries de televisão e livros. Apesar disso, no que tange a área de jogos físicos, como os de tabuleiro, essa adesão não é das maiores. 
