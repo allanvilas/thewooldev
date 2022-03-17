@@ -1,50 +1,51 @@
-var obj =[
-    [
-    "devicon-debian-plain-wordmark",
-    "devicon-windows8-original",
-    "Esses são os sistemas operacionais que utilizo.",
-    "system"
-],
+var obj =
 [
-    "devicon-javascript-plain",
-    "devicon-jquery-plain-wordmark",
-    "devicon-html5-plain-wordmark",
-    "devicon-css3-plain-wordmark",
-    "devicon-bootstrap-plain-wordmark",
-    "Tecnologias Front-End que atualmente uso.",
-    "frontEnd"
-],
- [
-    "devicon-php-plain",
-    "devicon-postgresql-plain-wordmark",
-    "devicon-python-plain-wordmark",
-    "devicon-apache-plain-wordmark",
-    "A base back-end dos meus projetos.",
-    "backEnd"
-],
- [
-    "devicon-gitlab-plain-wordmark",
-    "devicon-git-plain-wordmark",
-    "devicon-trello-plain",
-    "devicon-vscode-plain",
-    "devicon-markdown-original",
-    "Algumas ferramentas para uso administrativo.",
-    "projectAdm"
-],
- [
-    "devicon-godot-plain-wordmark",
-    "Engine que uso para jogos.",
-    "engine"
-],
-  [
-    "devicon-java-plain-wordmark",
-    "devicon-csharp-line-wordmark",
-    "devicon-laravel-plain-wordmark",
-    "devicon-sass-original",
-    "devicon-unity-original",
-    "Tecnologia que estou estudando.",
-    "larnFuture"
-]
+    [
+        "devicon-debian-plain-wordmark",
+        "devicon-windows8-original",
+        "Esses são os sistemas operacionais que utilizo.",
+        "system"
+    ],
+    [
+        "devicon-javascript-plain",
+        "devicon-jquery-plain-wordmark",
+        "devicon-html5-plain-wordmark",
+        "devicon-css3-plain-wordmark",
+        "devicon-bootstrap-plain-wordmark",
+        "Tecnologias Front-End que atualmente uso.",
+        "frontEnd"
+    ],
+    [
+        "devicon-php-plain",
+        "devicon-postgresql-plain-wordmark",
+        "devicon-python-plain-wordmark",
+        "devicon-apache-plain-wordmark",
+        "A base back-end dos meus projetos.",
+        "backEnd"
+    ],
+    [
+        "devicon-gitlab-plain-wordmark",
+        "devicon-git-plain-wordmark",
+        "devicon-trello-plain",
+        "devicon-vscode-plain",
+        "devicon-markdown-original",
+        "Algumas ferramentas para uso administrativo.",
+        "projectAdm"
+    ],
+    [
+        "devicon-godot-plain-wordmark",
+        "Engine que uso para jogos.",
+        "engine"
+    ],
+    [
+        "devicon-java-plain-wordmark",
+        "devicon-csharp-line-wordmark",
+        "devicon-laravel-plain-wordmark",
+        "devicon-sass-original",
+        "devicon-unity-original",
+        "Tecnologia que estou estudando.",
+        "larnFuture"
+    ]
 ];
 
 for(i=0;i<=obj.length;i++){
