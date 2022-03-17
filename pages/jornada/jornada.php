@@ -6,7 +6,7 @@
      echo '
     <body class="container-fluid">
         <main class="mx-auto">
-            <section>
+            <section class="my-5 container-fluid mx-auto d-flex justify-content-center">
                 <article>
                 <div class="col-sm-0 col-md-1 col-lx-2">
                 <div class="col-sm-12 col-md-10 col-lx-8">
