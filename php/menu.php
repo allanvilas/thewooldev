@@ -1,8 +1,8 @@
 <?php
     echo '
-    <nav class="navbar navbar-expand-lg menu p-3 mb-5 col-12 text-center" data-aos="fade-down" data-aos-duration="3000">
+    <nav class="navbar navbar-expand-lg menu p-3 mb-5 col-12 text-center">
         <a class="navbar-brand" href="#">
-        <img src="img/logo/twlogo/tw-svg.svg" class="d-inline-block align-top" alt="tw-logo" width="80px">
+        <img src="https://www.thewool.dev.br/img/logo/twlogo/tw-svg.svg" class="d-inline-block align-top" alt="tw-logo" width="80px">
         </a>
         <div class="">
             <a class="navbar-brand" href="#">TheWool</a>

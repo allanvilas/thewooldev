@@ -15,14 +15,16 @@
             <meta property="og:image:height" content="500"/>
             <meta property="og:description" content="Hey, I m Allan, this website is my portfolio and a tool that I m using on my lectures, please fell free to take a look."/>
             <title>The Wool Dev</title>
-            <link rel="icon" type="image/x-icon" href="/img/favico/wool.ico">
-            <link type="text/css" rel="stylesheet" href="https://www.thewool.dev.br/css/index.css">
-            <link type="text/css" rel="stylesheet" href="https://www.thewool.dev.br/css/style.css">
-            <link type="text/css" rel="stylesheet" href="https://www.thewool.dev.br/css/icons.css">
-            <link type="text/css" rel="stylesheet" href="https://www.thewool.dev.br/bootstrap/css/bootstrap.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="icon" type="image/x-icon" href="https://www.thewool.dev.br/img/favico/wool.ico">
+            <link type="text/css" rel="stylesheet" href="../../css/index.css">
+            <link type="text/css" rel="stylesheet" href="../../css/style.css">
+            <link type="text/css" rel="stylesheet" href="../../css/icons.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">        
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            
             <style>
                 
                 /*@media screen and (max-height:500px){
@@ -34,7 +36,5 @@
             </style>
         </head>
     ';
-
-
 
 ?>
