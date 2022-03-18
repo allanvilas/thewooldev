@@ -6,7 +6,7 @@
      echo '
 
 
-    <body class="container-fluid">'
+    <body class="container-fluid">';
         include '../../php/menu.php';
     echo'
         <main class="mx-auto">
