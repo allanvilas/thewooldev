@@ -1,10 +1,14 @@
 <?php 
     
     include '../../php/header.php';
-    include '../../php/menu.php';
+    
 
      echo '
-    <body class="container-fluid">
+
+
+    <body class="container-fluid">'
+        include '../../php/menu.php';
+    echo'
         <main class="mx-auto">
             <section class="my-5 container-fluid mx-auto ">
                 <article class="d-flex">
