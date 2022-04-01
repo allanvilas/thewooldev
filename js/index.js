@@ -65,7 +65,7 @@ for(i=0;i<=obj.length;i++){
 
     $(title).addClass("display-4");
     $(title).addClass("m-3");
-    $(title).addClass("p-4");
+    $(title).addClass("pl-4");
     $(title).text(titleVar);
     
     $(div).addClass(obj[i][((obj[i].length)-1)]);
