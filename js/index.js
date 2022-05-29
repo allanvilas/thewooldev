@@ -56,10 +56,8 @@ for(i=0;i<=obj.length;i++){
 
     $(jumbo).addClass("jumbotron");
     $(jumbo).addClass("jumbotron-fluid");
-    
 
     $(container).addClass("container-fluid");
-    
 
     let titleVar = obj[i][((obj[i].length)-2)];
 
