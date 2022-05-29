@@ -1,0 +1,2 @@
+conexao.php filter=git-crypt diff=git-crypt
+dbalunos.php filter=git-crypt diff=git-crypt
