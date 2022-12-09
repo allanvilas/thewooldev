@@ -1,0 +1,32 @@
+.gameTextBase {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red !important;
+    color:red !important;
+}
+.gameText{
+    padding:8px;
+    margin: 10px;
+    background-color: green !important;
+    color:red !important;
+}
+.questions {
+    margin: 10px;
+    padding: 10px;
+    display: flexbox;
+    flex-direction: column;
+    background-color: blue !important;
+    color:red !important;
+}
+.questions > div {
+    background-color: violet !important;
+    margin: auto;
+
+}
+.mainArticle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
